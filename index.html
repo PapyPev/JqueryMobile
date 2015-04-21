@@ -3,14 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>MiniTwit Public Timeline</title>
 	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css">
 	<script src="jquerymobile/jquery-2.1.3.min.js"></script>
 	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
-	<script src="./scripts/public_timeline.js"></script>
 </head>
+
 <body>
 <div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-responsive-page1" data-title="Panel responsive page" data-url="panel-responsive-page1">
+	<script src="./scripts/public_timeline.js"></script>
     <div data-role="header">
         <h1>MiniTwit Public Timeline</h1>
         <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
@@ -18,10 +20,9 @@
     </div><!-- /header -->
     <div role="main" class="ui-content jqm-content jqm-fullwidth">
 
-    
-    	<table>
-    		<div id="timeline"></div>
-    	</table>
+
+    	<ul id="timeline" data-role="listview" data-inset="true"></ul>
+	
 
     </div><!-- /content -->
     <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
