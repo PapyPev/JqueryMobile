@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MINI TWITT</title>
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css">
+	<script src="jquerymobile/jquery-2.1.3.min.js"></script>
+	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Accueil</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Welcome on Little blue bird</h2>
+		
+		<h3>Menu</h3>
+		<p><a href="#sign in" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Sign In</a></p>
+		<p><a href="#sign up" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Sign Up</a></p>
+		<p><a href="#public timeline" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Public Timeline</a></p>
+		<p><a href="#my timeline" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">My Timeline</a></p>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="a">
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+`<!-- -------------------------------------------------- -->
+
+<div data-role="page" id="my timeline">
+
+	<div data-role="header" data-theme="b">
+		<h1>Inscription</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>My Timeline</h2>
+		
+		
+		<label for="textinput-s">Message : <input type="text" name="Username" id="Username" placeholder="write your message" value="" data-clear-btn="true">	</label>
+		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "accueil"</a></p>
+		<div class="actions"><input type="submit" value="Send"></div>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+`<!-- -------------------------------------------------- -->
+
+<div data-role="page" id="public timeline">
+
+	<div data-role="header" data-theme="b">
+		<h1>Little Blue Bird</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Public Timeline</h2>
+		
+		
+		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "accueil"</a></p>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+`<!-- -------------------------------------------------- -->
+
+<div data-role="page" id="sign in">
+
+	<div data-role="header" data-theme="b">
+		<h1>Little Blue Bird</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Sign In</h2>
+		
+		<label for="textinput-s">Username: <input type="text" name="Username" id="Username" placeholder="Pseudo" value="" data-clear-btn="true">	</label>
+		<label for="password">Password : <input type="password" name="password" id="password" value="" data-clear-btn="true"> </label>
+		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "accueil"</a></p>
+		<div class="actions"><input type="submit" value="Sign In"></div>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+`<!-- ------------------------------------------------ -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="sign up">
+
+	<div data-role="header" data-theme="b">
+		<h1>Inscription</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Sign Up</h2>
+		
+		<label for="textinput-s">Username: <input type="text" name="Username" id="Username" placeholder="Pseudo" value="" data-clear-btn="true">	</label>
+		<label for="textinput-s">E-mail: <input type="text" name="E-mail" id="E-mail" placeholder="Adresse @" value="" data-clear-btn="true"> </label>
+		<label for="password">Password : <input type="password" name="password" id="password" value="" data-clear-btn="true"> </label>
+		<label for="password">Password (Repeat) : <input type="password" name="password2" id="password2" value="" data-clear-btn="true"> </label>
+		<p><a href="#one" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to page "accueil"</a></p>
+		<div class="actions"><input type="submit" value="Sign Up"></div>
+
+		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html>
