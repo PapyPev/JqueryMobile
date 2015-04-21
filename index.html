@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css">
 	<script src="jquerymobile/jquery-2.1.3.min.js"></script>
 	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
-	<script src="./scripts/onload.js"></script>
+	<script src="./scripts/public_timeline.js"></script>
 </head>
 <body>
 <div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-responsive-page1" data-title="Panel responsive page" data-url="panel-responsive-page1">
@@ -17,15 +17,12 @@
         <a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
     </div><!-- /header -->
     <div role="main" class="ui-content jqm-content jqm-fullwidth">
-        <h1>Panel responsive</h1>
-        <p>This is a typical page that has two buttons in the header bar that open panels. The left panel has the push display mode, the right panel reveal. To make this responsive, you can make the page re-flow at wider widths. This allows both the panel menu and page to be used together when more space is available. This behavior is controlled by CSS media queries. You can create a custom one for a specific breakpoint or use the breakpoint preset by adding the <code>class="ui-responsive-panel"</code> to the page container. We have added this class on this demo page. Note that when using the preset class, we also hide the dismiss layer on wider screens if the panel has the push display mode.</p>
-        <div data-demo-html="#panel-responsive-page1"></div><!--/demo-html -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="../" data-rel="back" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon">Back</a>
+
+    
+    	<table>
+    		<div id="timeline"></div>
+    	</table>
+
     </div><!-- /content -->
     <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
         <ul data-role="listview">
