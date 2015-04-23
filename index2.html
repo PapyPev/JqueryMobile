@@ -12,7 +12,7 @@
 
 	<body>
 
-		<div data-role="page" class="jqm-demos ui-responsive-panel" id="panel-responsive-page1" data-title="Panel responsive page" data-url="panel-responsive-page1">
+		<div data-role="page" class="jqm-demos ui-responsive-panel" id="public_timeline" data-title="Panel responsive page" data-url="panel-responsive-page1">
 
 			<!-- ======================================================================== -->
 
@@ -20,9 +20,9 @@
 				<h1>MiniTwit Public Timeline</h1>
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#" class="ui-btn-active">Public</a></li>
-						<li><a href="#">Sign in</a></li>
-						<li><a href="#" data-rel="dialog" data-transition="pop">Sign out</a></li>
+						<li><a href="#" class="ui-btn-active"  data-rel="dialog">Public</a></li>
+						<li><a href="#sign_in">Sign in</a></li>
+						<li><a href="#sign_up">Sign up</a></li>
 					</ul>
 				</div><!-- /navbar -->
 			</div><!-- /header -->
@@ -31,12 +31,80 @@
 
 			<div role="main" class="ui-content">
 
-				<p>Page content goes here.</p>
 				<ul id="timeline" data-role="listview" data-inset="true"></ul>
 				
 			</div>
 
 			<!-- ======================================================================== -->
+
+			<div data-role="footer">
+				<h4><small>IMERIR2A - Groupe Aubert, Bes, Bideau, Faivre, Gandou, Fernandez, Perez, Vrot</small></h4>
+			</div><!-- /footer -->
+
+		</div><!-- /page -->
+
+		<div data-role="page" class="jqm-demos ui-responsive-panel" id="sign_in" data-title="Panel responsive page" data-url="panel-responsive-page1">
+
+			<!-- ======================================================================== -->
+
+			<div data-role="header">
+				<h1>MiniTwit Sign In</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#public_timeline">Public</a></li>
+						<li><a href="#"class="ui-btn-active" data-rel="dialog">Sign in</a></li>
+						<li><a href="#sign_up">Sign up</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /header -->
+
+			<!-- ======================================================================== -->
+
+			<div role="main" class="ui-content">
+
+				<label for="textinput-s">Username: <input type="text" name="Username" id="Username" placeholder="Pseudo" value="" data-clear-btn="true">	</label>
+				<label for="password">Password : <input type="password" name="password" id="password" placeholder="Password" value="" data-clear-btn="true"> </label>
+				<div class="actions"><input type="submit" value="Sign In"></div>
+				
+			</div>
+
+			<!-- ======================================================================== -->
+			
+			<div data-role="footer">
+				<h4><small>IMERIR2A - Groupe Aubert, Bes, Bideau, Faivre, Gandou, Fernandez, Perez, Vrot</small></h4>
+			</div><!-- /footer -->
+
+		</div><!-- /page -->
+
+		<div data-role="page" class="jqm-demos ui-responsive-panel" id="sign_up" data-title="Panel responsive page" data-url="panel-responsive-page1">
+
+			<!-- ======================================================================== -->
+
+			<div data-role="header">
+				<h1>MiniTwit Sign Up</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#public_timeline">Public</a></li>
+						<li><a href="#sign_in">Sign in</a></li>
+						<li><a href="#" class="ui-btn-active" data-rel="dialog">Sign up</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /header -->
+
+			<!-- ======================================================================== -->
+
+			<div role="main" class="ui-content">
+
+				<label for="textinput-s">Username: <input type="text" name="Username" id="Username" placeholder="Pseudo" value="" data-clear-btn="true">	</label>
+				<label for="textinput-s">E-mail: <input type="text" name="E-mail" id="E-mail" placeholder="MonAdresse@email.com" value="" data-clear-btn="true"> </label>
+				<label for="password">Password : <input type="password" name="password" id="password" placeholder="Password" value="" data-clear-btn="true"> </label>
+				<label for="password">Password (Repeat) : <input type="password" name="password2" id="password2" placeholder="Password" value="" data-clear-btn="true"> </label>
+				<div class="actions"><input type="submit" value="Sign Up"></div>
+
+			</div>
+
+			<!-- ======================================================================== -->
+			
 			<div data-role="footer">
 				<h4><small>IMERIR2A - Groupe Aubert, Bes, Bideau, Faivre, Gandou, Fernandez, Perez, Vrot</small></h4>
 			</div><!-- /footer -->
