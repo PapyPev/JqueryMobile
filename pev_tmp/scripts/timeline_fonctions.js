@@ -2,6 +2,7 @@ function timeline_getPersonnel(pseudo) {
 
 	var titre = "TimeLine de " + pseudo;
 
+	$("#timeline_contenant").html('').trigger('create');
 	$("#timeline_titre").html(titre).trigger('create');
 
 	var adresse = "http://iris.local/minitwit/api/timeline/"+pseudo;
@@ -48,6 +49,7 @@ function timeline_getPersonnel(pseudo) {
 
 function timeline_getPublic() {
 
+	$("#timeline_contenant").html('').trigger('create');
 	$("#timeline_titre").html('TimeLine Publique').trigger('create');
 
 	// Recuperation des donnees JSON
@@ -90,22 +92,29 @@ function timeline_getPublic() {
 	
 }
 
-function timeline_getRechercher() {
-	$("#timeline_content").html('rechercher').trigger('create');
-	$("#timeline_titre").html('Titre Rechercher').trigger('create');
-}
-
 function timeline_getInscription() {
-	$("#timeline_content").html('inscription').trigger('create');
+	$("#timeline_messages").html('').trigger('create');
+	$("#timeline_contenant").html('inscription').trigger('create');
 	$("#timeline_titre").html('Titre Inscription').trigger('create');
 }
 
 function timeline_getConnexion() {
-	$("#timeline_content").html('<form name="monForm" action="" method="post"> <!-- Ajout method="post" --><label for="pseudo">Pseudo</label><input type="text" id="pseudo" name="pseudo" /><label for="text">text</label><input type="text" id="text" name="text" /><input type="button" id="envoyer" value="Envoyer" onclick="test();" /> <!-- appele la fonction dans le fichier test.js --></form>').trigger('create');
+	$("#timeline_contenant").html('').trigger('create');
 	$("#timeline_titre").html('Titre Connexion').trigger('create');
+
+	$("#timeline_contenant").html(
+		'<form name="monForm" action="" method="post">'
+			+ '<label for="connex_pseudo">Pseudo</label>'
+			+ '<input type="text" id="connex_pseudo" name="connex_pseudo" />'
+			+ '<label for="text">Mot de Passe</label>'
+			+ '<input type="password" id="connex_pseudo" name="connex_pseudo" />'
+			+ '<input type="button" id="envoyer" value="Envoyer" onclick="test();" />'
+		+ '</form>').trigger('create');
+	
 }
 
 function timeline_getDeconnexion() {
-	$("#timeline_content").html('deconnexion').trigger('create');
-	$("#timeline_titre").html('Titre Deconnexion').trigger('create');
+	$("#timeline_messages").html('').trigger('create');
+	$("#timeline_contenant").html('deco').trigger('create');
+	$("#timeline_titre").html('Titre deco').trigger('create');
 }
