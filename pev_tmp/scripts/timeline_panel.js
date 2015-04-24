@@ -1,6 +1,7 @@
 $(window).load(function(){
 
-	var connexion = false;
+	var connexion = true;
+	var pseudo = "Pev";
 
 	if (connexion) {
 
@@ -8,7 +9,7 @@ $(window).load(function(){
 		'<ul data-role="listview">'
 			+'<li><h4>Navigation</h4></li>'
 			+'<button data-icon="home" data-theme="b" onclick="timeline_getPublic();">Public</button>'
-			+'<button data-icon="grid" onclick="timeline_getPersonnel();">Personnel</button>'
+			+'<button data-icon="grid" onclick="timeline_getPersonnel(\''+pseudo+'\');">Personnel</button>'
 			+'<button data-icon="search" onclick="timeline_getRechercher();">Rechercher</button>'
 			+'<button data-icon="delete" onclick="timeline_getDeconnexion();">Deconnexion</button>'
 			+'<br />'
