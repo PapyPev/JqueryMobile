@@ -1,6 +1,6 @@
 $(window).load(function(){
 
-	var connexion = false;
+	var connexion = true;
 	var pseudo = "Pev";
 	// TODO : getpseudo
 
