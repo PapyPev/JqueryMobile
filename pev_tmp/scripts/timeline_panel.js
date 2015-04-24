@@ -7,7 +7,6 @@ $(window).load(function(){
 
 		$("#timeline_panel").html(
 		'<ul data-role="listview">'
-			+'<li><h4>Navigation</h4></li>'
 			+'<button data-icon="home" data-theme="b" onclick="timeline_getPublic();">Public</button>'
 			+'<button data-icon="grid" onclick="timeline_getPersonnel(\''+pseudo+'\');">Personnel</button>'
 			+'<button data-icon="search" onclick="timeline_getRechercher();">Rechercher</button>'
@@ -22,7 +21,6 @@ $(window).load(function(){
 
 		$("#timeline_panel").html(
 		'<ul data-role="listview">'
-			+'<li><h4>Navigation</h4></li>'
 			+'<button data-icon="home" data-theme="b" onclick="timeline_getPublic();">Public</button>'
 			+'<button data-icon="grid" onclick="timeline_getInscription();">Inscription</button>'
 			+'<button data-icon="check" onclick="timeline_getConnexion();">Connexion</button>'
